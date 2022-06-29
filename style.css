@@ -1,0 +1,169 @@
+0* {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  
+    
+}
+
+html, body {
+    text-align: center;
+    margin: 10px;
+}
+
+
+.grid {
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+        "bio"
+        "fresh"
+        "frozen ";
+    
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+    font-weight: 200;
+    margin: 15px auto;
+    font-weight: thin;
+}
+
+a.homepage:link {
+  all: unset;
+}
+
+a.homepage:visited {
+  all: unset;
+}
+
+a.homepage:hover {
+    color: blue;
+    cursor: pointer;
+  
+}
+
+h2 {
+    margin: 20px 0;
+    font-size: 1.3em;
+}
+
+h4 {
+    margin: 20px 0;
+}
+
+ul {
+    font-family: 'Grape Nuts', cursive;
+    font-size: 1.5em;
+    margin: -5px 0;
+    
+}
+.intro {
+    grid-area: bio
+}
+
+.fresh {
+    grid-area: fresh;
+    
+        
+}
+
+.frozen {
+    grid-area: frozen;
+    
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: 0.5px solid darkgray;
+    box-shadow: 5px 10px 10px darkgray;  /* x, y, blur */
+    
+    
+}
+
+
+/* ********  Fresh Pizza Mobile ******** CSS */
+
+h3 > .letter-selector {
+    margin: 20px auto;
+}
+
+.fresh-image {
+    width: 50vw;
+    height: auto;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+    img {
+        width: 75%;
+        height: auto;
+        border-radius: 20px;
+        border: 0.5px solid darkgray;
+        box-shadow: 5px 10px 10px darkgray;  /* x, y, blur */
+       
+    }
+
+}
+
+/* Large devices (laptops/desktops, 970px and up) */
+@media only screen and (min-width: 970px) {
+
+    .grid {
+        display: grid;
+        justify-content: center;
+        grid-template-areas: 
+            "bio bio"
+            "fresh frozen";
+            
+    }
+    img {
+        width: 75%;
+        height: auto;
+        border-radius: 20px;
+        border: 0.5px solid darkgray;
+        box-shadow: 5px 10px 10px darkgray;  /* x, y, blur */
+       
+    }                        
+                                              
+}
+
+/* Extra large devices (large laptops and desktops, 1000px and up) */
+@media only screen and (min-width: 1000px) {
+    
+
+    body {
+        max-width: 50vw;
+        margin: auto;
+    }
+
+
+
+    .fresh {
+        width: 100%;
+        height: auto;
+    }
+
+    .frozen {
+        width: 104%;
+        height: auto;
+        
+    }
+
+                                           
+
+                                           
+                                           
+                                           
+}
